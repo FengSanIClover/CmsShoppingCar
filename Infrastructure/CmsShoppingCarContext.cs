@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CmsShoppingCar.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CmsShoppingCar.Infrastructure
@@ -13,5 +14,7 @@ namespace CmsShoppingCar.Infrastructure
         {
 
         }
+
+        public DbSet<Page> Pages { get; set; }
     }
 }
